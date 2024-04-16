@@ -34,8 +34,16 @@ app.frame("/", async (c) => {
         lastUpdatedAt={stats.lastUpdatedAt}
       />
     ),
-    action: "/",
-    intents: [<Button.Reset>Reset</Button.Reset>],
+    intents: [
+      <Button.Reset>Refresh</Button.Reset>,
+      <Button.Redirect
+        location={encodeURI(
+          `https://warpcast.com/~/compose?embeds[]=${process.env.HOST_URL}`
+        )}
+      >
+        Share
+      </Button.Redirect>,
+    ],
   });
 });
 
