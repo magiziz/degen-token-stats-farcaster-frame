@@ -35,7 +35,7 @@ app.frame("/", async (c) => {
       />
     ),
     intents: [
-      <Button.Reset>Refresh</Button.Reset>,
+      <Button action="/">Refresh</Button>,
       <Button.Redirect
         location={encodeURI(
           `https://warpcast.com/~/compose?embeds[]=${process.env.HOST_URL}`
