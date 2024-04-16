@@ -13,7 +13,7 @@ export async function generateMetadata(): Promise<Metadata> {
 export default function Home() {
   return (
     <h2>
-      Check out the degen token stats <a href="">here</a>
+      Check out the degen token stats <a href="https://warpcast.com/magiziz/0x03395fab">here</a>
     </h2>
   );
 }
